@@ -2,7 +2,7 @@
 
 
 Bat::Bat(Object* parent,ObjectID id)
-	: Object(parent,id), m_animation(new Animation("res/images/enemies/bat.png",0,0,79,86,1,false))
+	: Object(parent,id), m_animation(new Animation("/usr/share/terracota/res/images/enemies/bat.png",0,0,79,86,1,false))
 {
 
 }

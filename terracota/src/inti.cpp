@@ -135,7 +135,7 @@ class Idle : public SpriteState
 {
 public:
     Idle(Inti *inti)
-        : m_inti(inti), m_animation(new Animation("res/images/characters/inti/idle.png",
+        : m_inti(inti), m_animation(new Animation("/usr/share/terracota/res/images/characters/inti/idle.png",
             0, 0, 120, 186, 24, 50, true)), m_left(0), m_right(0), m_up(0), m_down(0), m_attack(0), m_interacting(0)
     {
         m_inti->set_dimensions(m_animation->w(), m_animation->h());
@@ -351,7 +351,7 @@ class Attacking: public SpriteState
 public:
     Attacking(Inti *inti)
         : m_inti(inti), m_animation(
-              new Animation("res/images/characters/inti/attack.png", 0, 0, 207, 260, 12, 50, true)),
+              new Animation("/usr/share/terracota/res/images/characters/inti/attack.png", 0, 0, 207, 260, 12, 50, true)),
           m_left(0), m_right(0), m_down(0), m_up(0), m_attack(0), m_last(0)
     {
     }
@@ -475,7 +475,7 @@ class Interacting: public SpriteState
 public:
     Interacting(Inti *inti)
         : m_inti(inti), m_animation(
-              new Animation("res/images/characters/inti/interact.png", 0, 0, 128, 177, 18, 50, true)),
+              new Animation("/usr/share/terracota/res/images/characters/inti/interact.png", 0, 0, 128, 177, 18, 50, true)),
           m_left(0), m_right(0), m_down(0), m_up(0), m_interacting(0), m_last(0)
     {
     }
@@ -596,7 +596,7 @@ class Walking : public SpriteState
 public:
     Walking(Inti *inti)
         : m_inti(inti), m_animation(
-              new Animation("res/images/characters/inti/walking.png", 0, 0, 120, 186, 20, 50, true)),
+              new Animation("/usr/share/terracota/res/images/characters/inti/walking.png", 0, 0, 120, 186, 20, 50, true)),
           m_left(0), m_right(0), m_down(0), m_up(0), m_last(0)
     {
     }

@@ -15,15 +15,15 @@ Options::Options()
     double bx=263,by=76,space=20;
 	
 
-	m_background = env->resources_manager->get_texture("res/images/titlescreen/background_terracota.jpg");
+	m_background = env->resources_manager->get_texture("/usr/share/terracota/res/images/titlescreen/background_terracota.jpg");
 
-    Button* m_fullscreen = new Button(this,"fullscreen", "res/images/buttons/menu_buttom/start_idle.png",
-                                        "res/images/buttons/menu_buttom/start_active.png");
+    Button* m_fullscreen = new Button(this,"fullscreen", "/usr/share/terracota/res/images/buttons/menu_buttom/start_idle.png",
+                                        "/usr/share/terracota/res/images/buttons/menu_buttom/start_active.png");
 
-    Button* m_window_mode = new Button(this,"window_mode", "res/images/buttons/menu_buttom/start_idle.png",
-                                        "res/images/buttons/menu_buttom/start_active.png");
-    Button* m_back = new Button(this,"back", "res/images/buttons/menu_buttom/start_idle.png",
-                                        "res/images/buttons/menu_buttom/start_active.png");
+    Button* m_window_mode = new Button(this,"window_mode", "/usr/share/terracota/res/images/buttons/menu_buttom/start_idle.png",
+                                        "/usr/share/terracota/res/images/buttons/menu_buttom/start_active.png");
+    Button* m_back = new Button(this,"back", "/usr/share/terracota/res/images/buttons/menu_buttom/start_idle.png",
+                                        "/usr/share/terracota/res/images/buttons/menu_buttom/start_active.png");
 
 	m_back->add_observer(this);
     m_window_mode->add_observer(this);

@@ -12,7 +12,7 @@ Interface::Interface(Object * parent, ObjectID id, GameControl* gc)
 	  m_gc(gc)
 {
     Environment* env = Environment::get_instance();	
-	ui_elements = env->resources_manager->get_texture("res/images/interface/UI-elementos.png");
+	ui_elements = env->resources_manager->get_texture("/usr/share/terracota/res/images/interface/UI-elementos.png");
 }
 
 void 

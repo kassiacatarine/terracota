@@ -22,7 +22,7 @@ DialogueManager::DialogueManager()
 {
 	Environment *env = Environment::get_instance();
   
-    m_settings = env->resources_manager->get_settings("res/conf/dialogue.conf");
+    m_settings = env->resources_manager->get_settings("/usr/share/terracota/res/conf/dialogue.conf");
 }
 
 DialogueManager::~DialogueManager()

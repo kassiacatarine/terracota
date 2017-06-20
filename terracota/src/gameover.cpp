@@ -12,7 +12,7 @@ GameOver::GameOver()
 	double w = env->canvas->w();
 	double h = env->canvas->h();
 	
-	m_background = env->resources_manager->get_texture("res/images/gameover/over.png");
+	m_background = env->resources_manager->get_texture("/usr/share/terracota/res/images/gameover/over.png");
 }
 
 GameOver::~GameOver()

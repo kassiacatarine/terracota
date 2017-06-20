@@ -14,26 +14,26 @@ TitleScreen::TitleScreen()
 	GameFlow::get_instance()->set_state(GameState::MENU);
 
 	Environment* env = Environment::get_instance();
-	m_background = env->resources_manager->get_texture("res/images/titlescreen/background.png");
+	m_background = env->resources_manager->get_texture("/usr/share/terracota/res/images/titlescreen/background.png");
 
     double w  = env->canvas->w();
     double h  = env->canvas->h();
     double bx=263,by=76,space=20;
  
-    Button* m_start = new Button(this,"start", "res/images/titlescreen/play_01.png",
-                                               "res/images/titlescreen/play_02.png");
+    Button* m_start = new Button(this,"start", "/usr/share/terracota/res/images/titlescreen/play_01.png",
+                                               "/usr/share/terracota/res/images/titlescreen/play_02.png");
 
-    Button* m_continue = new Button(this,"continue", "res/images/titlescreen/continue_01.png",
-                                                     "res/images/titlescreen/continue_02.png");
+    Button* m_continue = new Button(this,"continue", "/usr/share/terracota/res/images/titlescreen/continue_01.png",
+                                                     "/usr/share/terracota/res/images/titlescreen/continue_02.png");
 
-	Button* m_options = new Button(this,"options","res/images/titlescreen/options_01.png",
-                                                  "res/images/titlescreen/options_02.png");
+	Button* m_options = new Button(this,"options","/usr/share/terracota/res/images/titlescreen/options_01.png",
+                                                  "/usr/share/terracota/res/images/titlescreen/options_02.png");
 
-    Button* m_quit = new Button(this,"quit","res/images/titlescreen/quit_01.png",
-                                            "res/images/titlescreen/quit_02.png");
+    Button* m_quit = new Button(this,"quit","/usr/share/terracota/res/images/titlescreen/quit_01.png",
+                                            "/usr/share/terracota/res/images/titlescreen/quit_02.png");
 
-    m_ballow = new Button(this,"ballow","res/images/titlescreen/ballow.png",
-                                            "res/images/titlescreen/ballow.png");
+    m_ballow = new Button(this,"ballow","/usr/share/terracota/res/images/titlescreen/ballow.png",
+                                            "/usr/share/terracota/res/images/titlescreen/ballow.png");
     m_ballow->set_visible(false);
 
     m_continue->add_observer(this);
@@ -57,7 +57,7 @@ TitleScreen::TitleScreen()
     m_ballow->set_position(666 + dx, 332 + dy);
     m_quit->set_position(898 + dx, 504 + dy);
 
-	env->music->play("res/sounds/musicas/aboda/hopeofinti.mp3",50);
+	env->music->play("/usr/share/terracota/res/sounds/musicas/aboda/hopeofinti.mp3",50);
 }
 
 TitleScreen::~TitleScreen()

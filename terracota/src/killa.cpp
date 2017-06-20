@@ -45,7 +45,7 @@ class Idle : public SpriteState
 {
 public:
     Idle(Killa *killa)
-        : m_killa(killa), m_animation(new Animation("res/images/characters/killa/idle.png",
+        : m_killa(killa), m_animation(new Animation("/usr/share/terracota/res/images/characters/killa/idle.png",
             0, 0, 120, 206, 24, 45, true)), m_left(0), m_right(0), m_up(0), m_down(0), m_attack(0), m_interacting(0)
     {
         m_killa->set_dimensions(m_animation->w(), m_animation->h());
@@ -259,7 +259,7 @@ class Attacking: public SpriteState
 public:
     Attacking(Killa *killa)
         : m_killa(killa), m_animation(
-              new Animation("res/images/characters/killa/attack.png", 0, 0, 207, 260, 12, 50, true)),
+              new Animation("/usr/share/terracota/res/images/characters/killa/attack.png", 0, 0, 207, 260, 12, 50, true)),
           m_left(0), m_right(0), m_down(0), m_up(0), m_attack(0), m_last(0)
     {
     }
@@ -383,7 +383,7 @@ class Interacting: public SpriteState
 public:
     Interacting(Killa *killa)
         : m_killa(killa), m_animation(
-              new Animation("res/images/characters/killa/interact.png", 0, 0, 128, 177, 18, 50, true)),
+              new Animation("/usr/share/terracota/res/images/characters/killa/interact.png", 0, 0, 128, 177, 18, 50, true)),
           m_left(0), m_right(0), m_down(0), m_up(0), m_interacting(0), m_last(0)
     {
     }
@@ -505,7 +505,7 @@ class Walking : public SpriteState
 public:
     Walking(Killa *killa)
         : m_killa(killa), m_animation(
-              new Animation("res/images/characters/killa/walking.png", 0, 0, 114, 208, 24, 50, true)),
+              new Animation("/usr/share/terracota/res/images/characters/killa/walking.png", 0, 0, 114, 208, 24, 50, true)),
           m_left(0), m_right(0), m_down(0), m_up(0), m_last(0)
     {
     }
